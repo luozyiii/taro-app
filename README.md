@@ -50,7 +50,7 @@ yarn add @babel/eslint-parser@7.15.0 # 安装解释器
 yarn lint
 ```
 
-#### husky + lint-staged
+#### husky + lint-staged (注意版本)
 - husky：属于git hook工具，用来配置npm脚本的
 - lint-staged：能够检查本地代码的改动，帮我们只校验改动过的文件，大大提升了校验效率
 
