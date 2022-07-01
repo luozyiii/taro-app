@@ -1,0 +1,27 @@
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+@mixin singleline-ellipsis($substract: 0) {
+  //`$substract`单位为%
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100% - $substract;
+}
+
+%singleline-ellipsis {
+  @include singleline-ellipsis;
+}
+
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+%hidden {
+  @include hidden;
+}

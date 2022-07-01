@@ -21,6 +21,11 @@ const config = {
     options: {},
   },
   framework: "react",
+  sass: {
+    resource: ["src/styles/variable.scss", "src/styles/mixins.scss"],
+    projectDirectory: path.resolve(__dirname, ".."),
+    data: "$nav-height: 48px;",
+  },
   mini: {
     postcss: {
       pxtransform: {

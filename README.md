@@ -1,4 +1,5 @@
 # taro-app
+
 Taro 小程序模板
 
 ### React + Taro + TS + Hooks 技术栈
@@ -11,7 +12,8 @@ Taro 小程序模板
 yarn dev:weapp # 开发环境
 ```
 
-### Eslint 
+### Eslint
+
 ```bash
 yarn add @babel/eslint-parser@7.15.0 # 安装解释器
 ```
@@ -51,7 +53,8 @@ yarn lint
 ```
 
 #### husky + lint-staged (新版本配置)
-- husky：属于git hook工具，用来配置npm脚本的
+
+- husky：属于 git hook 工具，用来配置 npm 脚本的
 - lint-staged：能够检查本地代码的改动，帮我们只校验改动过的文件，大大提升了校验效率
 
 ```bash
@@ -67,7 +70,7 @@ npm run prepare
 # 添加hooks
 npx husky add .husky/pre-commit "npx lint-staged"
 
-# 安装 lint-staged 
+# 安装 lint-staged
 yarn add -D lint-staged
 
 # package.json 配置一下
@@ -91,6 +94,33 @@ alias: {
   "@/*": ["./src/*"]
 }
 ```
+
+### 样式设置
+
+#### 全局样式设置
+
+- webpack 注入全局样式变量 [link](https://taro-docs.jd.com/taro/docs/config-detail#sass)
+
+```js
+// config/index.js
+// 全局注入 scss 的例子: 往所有 scss 文件头部插入 scss 代码
+// 全局 scss 变量，若 data 与 resource 中设置了同样的变量，则 data 的优先级高于 resource
+module.exports = {
+  // ...
+  sass: {
+    resource: ["src/styles/variable.scss", "src/styles/mixins.scss"],
+    projectDirectory: path.resolve(__dirname, ".."),
+    data: "$nav-height: 48px;",
+  },
+};
+```
+
+```js
+// 样式目录：src/styles
+// 页面示例：src/pages/examples/scss
+```
+
+- app.scss 设置全局样式类
 
 #### css modules 配置
 

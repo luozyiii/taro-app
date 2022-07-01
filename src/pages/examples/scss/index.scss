@@ -1,0 +1,10 @@
+.css-1 {
+  @include singleline-ellipsis;
+}
+.css-2 {
+  height: $nav-height;
+  background: red;
+}
+.css-3 {
+  color: $myColor;
+}

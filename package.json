@@ -44,12 +44,14 @@
     "@tarojs/react": "3.4.13",
     "@tarojs/runtime": "3.4.13",
     "@tarojs/taro": "3.4.13",
+    "@tarojs/taro-weapp": "^2.2.10",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@tarojs/mini-runner": "3.4.13",
+    "@tarojs/plugin-babel": "^2.2.10",
     "@tarojs/webpack-runner": "3.4.13",
     "@types/react": "^17.0.2",
     "@types/webpack-env": "^1.13.6",
