@@ -141,3 +141,13 @@ cssModules: {
 import styles from "./index.module.scss";
 <Text className={styles.abc}>css modules</Text>;
 ```
+
+### 常用 Taro API 封装
+
+```
+目录：src/common/tools.ts
+```
+
+- 网络请求：request
+- 消息提示框：showToast
+- loading 提示框：showLoading
