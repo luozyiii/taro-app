@@ -29,7 +29,7 @@ const tools = {
         ...rest, // 剩余参数
       }).then((res) => {
         const { data } = res;
-        if (data?.code === 2000) {
+        if (data?.result === 0) {
           // 成功
           resolve(data);
         } else {
