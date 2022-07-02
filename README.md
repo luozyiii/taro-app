@@ -154,6 +154,32 @@ import styles from "./index.module.scss";
 - 带参数路由跳转：navigateTo
 - 缓存：setStorageSyncWithTime 和 getStorageSyncWithTime
 
-### dva ?
+### dva 数据流
+
+```bash
+# 安装依赖
+yarn add react-redux redux
+yarn add dva-core dva-loading
+
+```
+
+```
+示例目录：pages/examples/dva
+```
+
+- 主要改动目录：
+
+```ts
+// src/common/dva.ts
+```
+
+```ts
+// src/app.ts => src/app.tsx
+// 注意：import { Provider } from "react-redux"; 这个引入一直报错，最后只能对app.ts重命名为app.tsx
+```
+
+```ts
+// src/models
+```
 
 ### 骨架屏
