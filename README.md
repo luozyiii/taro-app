@@ -151,3 +151,9 @@ import styles from "./index.module.scss";
 - 网络请求：request
 - 消息提示框：showToast
 - loading 提示框：showLoading
+- 带参数路由跳转：navigateTo
+- 缓存：setStorageSyncWithTime 和 getStorageSyncWithTime
+
+### dva ?
+
+### 骨架屏
